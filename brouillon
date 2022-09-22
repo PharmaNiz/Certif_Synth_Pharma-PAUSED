@@ -1,0 +1,23 @@
+
+<div class="card text-white bg-danger mb-3" style="max-width: 20rem; margin: 0.5rem;font-color: black;">
+    <div class="card-header">Sant Publique</div>
+    <div class="card-body">
+        <center><h4 class="card-title"></h4></center>
+      <center><img src="./" alt="" style="width:50% ;"></center>
+      <p class="card-text">
+        <ul>
+          <li>Galénique</li>
+          <li>BPP</li>
+          <li>Contrôles</li>
+          <li>BPL</li>
+          <li>Analyse</li>
+          
+          
+        </ul>
+      </p>
+      <center>
+        <a href=""><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">En savoir plus</button>
+        </a>
+      </center>
+    </div>
+  </div>
