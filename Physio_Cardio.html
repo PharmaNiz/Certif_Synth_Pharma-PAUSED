@@ -89,10 +89,40 @@
 <!--Coeur-->  
     <div class="tab-pane active" id="Coeur" role="tabpanel">
       <center><h1>Coeur</h1></center>
-      <div><h2>I Histologie-Anatomie-Physiologie</h2>
-        <h3>1 Enveloppe</h3>
-        <center><img src="./CSP_Assets/EvCard.JPG" alt="EveloppeCardiSchema" style="width:50%; height:auto;"></center>
+  <!--Mettre le Plan avec des link-->
+      <div class="accordion" id="Plan" style="padding: 3% ;">
+        <div class="accordion-item">
+
+          <h2 class="accordion-header" id="heading">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+              Plan du cours
+            </button>
+          </h2>
+
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+             <ul>
+              <li><a href="#I_Title">I Anat-Histologie</a>
+                <ol>
+                <a href="#Enveloppe"><li>Enveloppe</li></a>
+                <a href="#Valves"><li>Valves</li></a>
+                <a href="#Vascularisation"><li>Vascularisation</li></a>                  
+                </ol>
+              </li>
+              <li>II</li>
+              <li>III</li>
+             </ul>
+            </div>
+          </div>
+        </div>
+
+        <br>
+  <!---->      
+      <div><h2 id="I_Title">I Histologie-Anatomie-Physiologie</h2>
+        <h3 id="Enveloppe">1 Enveloppe</h3>
+        
         <div>
+          <img src="./CSP_Assets/EvCard.JPG" alt="EveloppeCardiSchema" style="width:40%; height:auto; float: right;">
           <u>De l’extérieur vers l’intérieur :</u>
             <ol>
               <li>Péricarde : péricarde fibreux (collagène +++) + péricarde séreux composé d’un feuillet pariétal externe et d’un feuillet viscéral interne. <br> 
@@ -101,6 +131,9 @@
               <li>Myocarde : tissu musculaire (cardiomyocytes) + trame conjonctive (vascularisation via vaisseaux sanguins issus des coronaires)</li>
               <li>Endocarde : TC comprenant quelques fibres musculaires lisses et le réseau de Purkinje + endothélium (= épithélium de revêtement, en 
                 contact avec le sang).
+              </li>
+            </ol>
+
                 <ul>
                   <li>3 types de cardiomyocytes
                     <ul>
@@ -120,12 +153,13 @@
                   </li>
 
                 </ul>
-              </li>
-            </ol>
+
         </div>
 
-        <h3>2 Valvles</h3>
-        <center><img src="./CSP_Assets/valve-aortique-bicuspide-tricuspide.jpg" alt="Valves" style="width:50%; height:auto;"></center>
+        <br>
+        
+        <h3 id="Valves">2 Valves</h3>
+        <img src="./CSP_Assets/valve-aortique-bicuspide-tricuspide.jpg" alt="Valves" style="width:25%; height:auto; float: right;">
         <p>Structures élastiques, non musculaires, sans innervation ni irrigation sanguine => séparent les différentes cavités et empêchent le sang de 
           refluer dans le mauvais sens (= circulation à sens unique) </p>
         
@@ -159,16 +193,25 @@
       </table>
     </Center>
 
-  
-        <h3>3 Vascularisation</h3>
+ <br>
+    
+        <h3 id="Vascularisation">3 Vascularisation</h3>
 
 
     </div>
-
+<hr>
       <h2>II Circulation Sanguine</h2>
+
+
+<hr>
       <h2>III Rythme Cardiaque et Tissu Sinusal</h2>
+
+      
+<hr>
       <h2>IV ECG</h2>
     </div>
+    </div>
+    
 <!--Vaissaux--> 
     <div class="tab-pane" id="Vaissaux" role="tabpanel">
       <center><h1>Vaissaux</h1></center>
@@ -176,6 +219,7 @@
       <h2 style="color:blue ;">II Veines</h2>
       <h2>III Circulation Lymphatique</h2>
     </div>
+    
 <!--DSPA--> 
     <div class="tab-pane" id="DSPA" role="tabpanel">
       <center><h1>Débit Sanguin et Pression Arterielle</h1></center>
