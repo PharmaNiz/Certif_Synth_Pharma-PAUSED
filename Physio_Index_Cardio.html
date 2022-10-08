@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSP - PP DI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="/bootstrap.css">
+    
+</head>
+  <body>
+    <!---------------------Let's set the nav bar----------------------->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./CSP_Index.html">C.S.P</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+
+          <li class="nav-item">
+            <a class="nav-link active" href="./PP_Index.html">Physio. <br> Patho. <br> Ph.Cli
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./PPT_Index.html">Pharmaco. <br> PKPD <br> Toxico.</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Chimie <br> Ph.Gnosie <br> Ch.Théra. <br> BPL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bio. <br> Bioch. <br> Génet.</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Microbio_Index.html">Microbio. <br> Infectio.</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Galenique_Index.html">Galé. <br> BPP  <br> CTRL <br> Analyse</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./Indus_Index.html">Indus. <br> Recherche</a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./SP_Vigi_Index.html">SP. <br> Vigi.</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="#">Cas Cli. <br> Annales <br> Const.s</a>
+            </li>
+        </ul>
+       
+      </div>
+    </div>
+  </nav>
+
+
+<!-----------------------------------Let's put an indicator to see where we are (to be updated within each page)--------------->
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="./CSP_Index.html">Accueil</a></li>
+    <li class="breadcrumb-item"><a href="./PP_Index.html">Physio - Pathologie - Pharma. Clinique</a></li>
+    <li class="breadcrumb-item active">Cardiologie</li>
+</ol>
+  <!-----------------------------------Let's put a Title----------------------------------------------------------------->
+ <Center><h1><strong>Cardiologie</strong></h1></Center>
+
+<!--Let's separate physio et clinique into pills-->
+
+<div>
+  <center>
+    <ul class="nav nav-pills mb-3 nav-justified" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <a class="active nav-link active" data-bs-toggle="pill" href="#Physio" aria-selected="true" role="tab">Physiologie</a>
+      </li>
+      <li class="nav-item" role="presentation">
+        <a class="nav-link" data-bs-toggle="pill" href="#Pharm_Clinique" aria-selected="true" role="tab">Pharm. Clinique</a>
+      </li>
+    </ul>
+  </center>
+</div>
+<!--Let's put the tab content-->
+<div id="myTabContent" class="tab-content" style="padding: 1% ;">
+
+  <!--Physio Part-->  
+    <div class="tab-pane active" id="Physio" role="tabpanel">
+      <center><h2>Physiologie</h2></center>
+
+            <!--DropSown To quick-select-->
+<center>
+  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop3" type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Fiches  </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop3">
+        <center>
+          
+          <a class="dropdown-item" href="#Physio_Article">Physiologie</a>
+          <a class="dropdown-item" href="#Innervation">Innervation</a>
+          <a class="dropdown-item" href="#PNA">Péptide Natriurétique Aucriculaire</a>         
+        </center>
+      </div>
+    </div>
+  </div>
+  </center>
+  
+  <!--Let's put the grid to direct to each category-->
+
+      <div ID= "Grid" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 d-flex align-items-stretch" style="margin:2rem ;display: flex;
+      align-items: center;
+      justify-content: center;">
+
+
+<div id="Physio_Article" class="card text-white bg-info mb-3" style="max-width: 20rem; margin: 0.5rem;">
+  <div class="card-header">Physio</div>
+  <div class="card-body">
+      <center><h4 class="card-title">App.Cardio-V.</h4></center>
+    <center><img src="./CSP_Assets/CardioVasc_Logo.png" alt="" style="width:50% ;"></center>
+    <p class="card-text">
+      <ul>
+        <li>Coeur</li>
+        <li>Vaissaux</li>
+        <li>DS-PA</li>
+      </ul>
+    </p>
+    <center>
+    <a href="./Physio_Article_Cardio.html"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">En savoir plus</button>
+    </a></center>
+  </div>
+</div>
+
+<div id="Innervation" class="card text-white bg-info mb-3" style="max-width: 20rem; margin: 0.5rem;">
+  <div class="card-header">Physio</div>
+  <div class="card-body">
+      <center><h4 class="card-title">Innervation Cardiaque</h4></center>
+    <center><img src="./" alt="" style="width:50% ;"></center>
+    <p class="card-text">
+    </p>
+    <center>
+    <a href="./Work_In_progress.HTML"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">En savoir plus</button>
+    </a></center>
+  </div>
+</div>
+
+<div id="PNA" class="card text-white bg-info mb-3" style="max-width: 20rem; margin: 0.5rem;">
+  <div class="card-header">Physio</div>
+  <div class="card-body">
+      <center><h4 class="card-title">Peptide Natriurétique Atrial</h4></center>
+    <center><img src="./" alt="" style="width:50% ;"></center>
+    <p class="card-text">
+    </p>
+    <center>
+    <a href="./Work_In_progress.HTML"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">En savoir plus</button>
+    </a></center>
+  </div>
+</div>
+
+
+
+
+ <!--End of Physio Grid-->   
+      </div>
+ <!--End of Physio Tab-->   
+    </div>
+
+
+<!--Pharmacie Clinique Part-->
+    <div class="tab-pane " id="Pharm_Clinique" role="tabpanel">
+      <center><h2>Pharmacie Clinique</h2></center>
+
+            <!--DropSown To quick-select-->
+  <center>
+    <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+      <div class="btn-group" role="group">
+        <button id="btnGroupDrop3" type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pathologies  </button>
+        <div class="dropdown-menu" aria-labelledby="btnGroupDrop3">
+          <center>
+            <a class="dropdown-item" href="#Angor">Angor</a>
+            <a class="dropdown-item" href="#DouTho">Douleur Thoracique</a>
+            <a class="dropdown-item" href="#DysLipoProt">DysLipoProt</a>
+            <a class="dropdown-item" href="#Endocardite">Endocardites</a>
+            <a class="dropdown-item" href="#Fibri">Fibrillations</a>
+            <a class="dropdown-item" href="#HTA">H.T.A</a>
+            <a class="dropdown-item" href="#IM">Infra. du Myocarde</a>
+            <a class="dropdown-item" href="#IC">Insuf. Cardiaque</a>       
+            <a class="dropdown-item" href="#Mal">Malaise</a>
+            <a class="dropdown-item" href="#Palpi">Palpitations</a>
+            <a class="dropdown-item" href="#Valvu">Valvulopathies</a>
+          </center>       
+        </div>
+      </div>
+    </div>
+  </center>
+  
+  <!--Let's put the grid to direct to each category-->
+
+      <div ID= "Grid" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 d-flex align-items-stretch" style="margin:2rem ;display: flex;
+      align-items: center;
+      justify-content: center;">
+
+
+<div id="Angor" class="card text-white bg-info mb-3" style="max-width: 20rem; margin: 0.5rem;">
+  <div class="card-header">Path. PhCli.</div>
+  <div class="card-body">
+      <center><h4 class="card-title">Angor</h4></center>
+    <center><img src="./" alt="" style="width:50% ;"></center>
+    <p class="card-text">
+    </p>
+    <center>
+    <a href="./Work_In_progress.HTML"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">En savoir plus</button>
+    </a></center>
+  </div>
+</div>
+
+<div id="DouTho" class="card text-white bg-info mb-3" style="max-width: 20rem; margin: 0.5rem;">
+  <div class="card-header">Path. PhCli.</div>
+  <div class="card-body">
+      <center><h4 class="card-title">Douleur Thoracique</h4></center>
+    <center><img src="./" alt="" style="width:50% ;"></center>
+    <p class="card-text">
+    </p>
+    <center>
+    <a href="./Work_In_progress.HTML"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">En savoir plus</button>
+    </a></center>
+  </div>
+</div>
+
+<div id="DysLipoProt" class="card text-white bg-info mb-3" style="max-width: 20rem; margin: 0.5rem;">
+  <div class="card-header">Path. PhCli.</div>
+  <div class="card-body">
+      <center><h4 class="card-title">DysLipoProt</h4></center>
+    <center><img src="./" alt="" style="width:50% ;"></center>
+    <p class="card-text">
+    </p>
+    <center>
+    <a href="./Work_In_progress.HTML"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">En savoir plus</button>
+    </a></center>
+  </div>
+</div>
+
+<div id="Endocardite" class="card text-white bg-info mb-3" style="max-width: 20rem; margin: 0.5rem;">
+  <div class="card-header">Path. PhCli.</div>
+  <div class="card-body">
+      <center><h4 class="card-title">Endocardites</h4></center>
+    <center><img src="./" alt="" style="width:50% ;"></center>
+    <p class="card-text">
+    </p>
+    <center>
+    <a href="./Work_In_progress.HTML"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">En savoir plus</button>
+    </a></center>
+  </div>
+</div>
+
+<div id="Fibri" class="card text-white bg-info mb-3" style="max-width: 20rem; margin: 0.5rem;">
+  <div class="card-header">Path. PhCli.</div>
+  <div class="card-body">
+      <center><h4 class="card-title">Fibrillations</h4></center>
+    <center><img src="./" alt="" style="width:50% ;"></center>
+    <p class="card-text">
+    </p>
+    <center>
+    <a href="./Work_In_progress.HTML"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">En savoir plus</button>
+    </a></center>
+  </div>
+</div>
+
+<div id="HTA" class="card text-white bg-info mb-3" style="max-width: 20rem; margin: 0.5rem;">
+  <div class="card-header">Path. PhCli.</div>
+  <div class="card-body">
+      <center><h4 class="card-title">HTA</h4></center>
+    <center><img src="./" alt="" style="width:50% ;"></center>
+    <p class="card-text">
+    </p>
+    <center>
+    <a href="./Work_In_progress.HTML"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">En savoir plus</button>
+    </a></center>
+  </div>
+</div>
+
+<div id="IM" class="card text-white bg-info mb-3" style="max-width: 20rem; margin: 0.5rem;">
+  <div class="card-header">Path. PhCli.</div>
+  <div class="card-body">
+      <center><h4 class="card-title">Infra. du Myocarde</h4></center>
+    <center><img src="./" alt="" style="width:50% ;"></center>
+    <p class="card-text">
+    </p>
+    <center>
+    <a href="./Work_In_progress.HTML"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">En savoir plus</button>
+    </a></center>
+  </div>
+</div>
+
+<div id="IC" class="card text-white bg-info mb-3" style="max-width: 20rem; margin: 0.5rem;">
+  <div class="card-header">Path. PhCli.</div>
+  <div class="card-body">
+      <center><h4 class="card-title">Insuf. Cardiaque</h4></center>
+    <center><img src="./" alt="" style="width:50% ;"></center>
+    <p class="card-text">
+    </p>
+    <center>
+    <a href="./Work_In_progress.HTML"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">En savoir plus</button>
+    </a></center>
+  </div>
+</div>
+
+<div id="Mal" class="card text-white bg-info mb-3" style="max-width: 20rem; margin: 0.5rem;">
+  <div class="card-header">Path. PhCli.</div>
+  <div class="card-body">
+      <center><h4 class="card-title">Malaise</h4></center>
+    <center><img src="./" alt="" style="width:50% ;"></center>
+    <p class="card-text">
+    </p>
+    <center>
+    <a href="./Work_In_progress.HTML"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">En savoir plus</button>
+    </a></center>
+  </div>
+</div>
+
+<div id="Palpi" class="card text-white bg-info mb-3" style="max-width: 20rem; margin: 0.5rem;">
+  <div class="card-header">Path. PhCli.</div>
+  <div class="card-body">
+      <center><h4 class="card-title">Palpitations</h4></center>
+    <center><img src="./" alt="" style="width:50% ;"></center>
+    <p class="card-text">
+    </p>
+    <center>
+    <a href="./Work_In_progress.HTML"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">En savoir plus</button>
+    </a></center>
+  </div>
+</div>
+
+<div id="Valvu" class="card text-white bg-info mb-3" style="max-width: 20rem; margin: 0.5rem;">
+  <div class="card-header">Path. PhCli.</div>
+  <div class="card-body">
+      <center><h4 class="card-title">Valvulopathies</h4></center>
+    <center><img src="./" alt="" style="width:50% ;"></center>
+    <p class="card-text">
+    </p>
+    <center>
+    <a href="./Work_In_progress.HTML"><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">En savoir plus</button>
+    </a></center>
+  </div>
+</div>
+
+
+
+
+
+
+      
+    
+    
+
+ <!--End of Grid part-->     
+      </div>
+<!--End of Tab part-->
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!------------------------------Let's put the Scripts----------------------->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
