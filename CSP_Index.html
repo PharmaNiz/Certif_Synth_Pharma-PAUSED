@@ -63,6 +63,30 @@
 </ol>
 <!-----------------------------------Let's put a Title----------------------------------------------------------------->
 <Center><h1><strong>Certificat de Synthèse Pharmaceutique</strong></h1></Center>
+
+ <!--DropSown To quick-select-->
+ <center>
+  <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+    <div class="btn-group" role="group">
+      <button id="btnGroupDrop3" type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sujet  </button>
+      <div class="dropdown-menu" aria-labelledby="btnGroupDrop3">
+        <center>
+          <a class="dropdown-item" href="#PPP">Phy. Path. PhCli.</a>
+          <a class="dropdown-item" href="#PPT">P.P.T</a>
+          <a class="dropdown-item" href="#PC">Physique-Chimie</a>
+          <a class="dropdown-item" href="#Bio">Biologie</a>
+          <a class="dropdown-item" href="#Microbio">Microbiologie</a>
+          <a class="dropdown-item" href="#Gale">Galénique</a>
+          <a class="dropdown-item" href="#IR">Industrie & Recherche</a>
+          <a class="dropdown-item" href="#SPV">Santé Pu. et Vigilances</a>
+          <a class="dropdown-item" href="#EM">Examens Médicaux</a>
+          <a class="dropdown-item" href="#EdC">Etudes de Cas</a>
+
+        </center>
+      </div>
+    </div>
+  </div>
+  </center>
 <!-----------------------------------Let's put the grid to direct to each category------------------------------------------->
 <div ID= "Grid" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 d-flex align-items-stretch" style="margin:2rem ;display: flex;
 align-items: center;
@@ -70,12 +94,12 @@ justify-content: center;">
 
 
 
-<div class="card text-white bg-info mb-3" style="max-width: 20rem; margin: 0.5rem;font-color: black;">
+<div id="PPP" class="card text-white bg-info mb-3" style="max-width: 20rem; margin: 0.5rem;">
   <div class="card-header">Phy. Path. PhCli.</div>
   <div class="card-body">
-    <center><img src="./CSP_Assets/PP_Logo.png" alt="" style="width:50% ;"></center>
+    <center><img src="./CSP_Assets/PP_Logo.png" alt="" style="width:60% ;"></center>
     <p class="card-text">
-      <ul>
+      <ul style="list-style: none; ">
         <li>Anat. Physio.</li>
         <li>Sémio. Patho.</li>
         <li>Pharma. Clinique</li>
@@ -89,12 +113,12 @@ justify-content: center;">
   </div>
 </div>
 
-<div class="card text-white bg-danger mb-3" style="max-width: 20rem; margin: 0.5rem;font: black;">
+<div id="PPT" class="card text-white bg-danger mb-3" style="max-width: 20rem; margin: 0.5rem;font: black;">
   <div class="card-header">PPT</div>
   <div class="card-body">
-    <center><img src="./CSP_Assets/PPT_Logo.png" alt="" style="width:50% ;"></center>
+    <center><img src="./CSP_Assets/PPT_Logo.png" alt="" style="width:60% ;"></center>
     <p class="card-text">
-      <ul>
+      <ul style="list-style: none; ">
         <li>Pharmacologie</li>
         <li>PKPD</li>
         <li>Toxicologie</li>
@@ -108,12 +132,12 @@ justify-content: center;">
   </div>
 </div>
 
-<div class="card text-white bg-warning mb-3" style="max-width: 20rem; margin: 0.5rem;font-color: black;">
+<div id="PC" class="card text-white bg-warning mb-3" style="max-width: 20rem; margin: 0.5rem;">
   <div class="card-header">Physique-Chimie</div>
   <div class="card-body">
     <center><img src="./CSP_Assets/chimie_logo.png" alt="" style="width:50% ;"></center>
     <p class="card-text">
-      <ul>
+      <ul style="list-style: none; ">
         <li>Physique</li>
         <li>Chimie</li>
         <li>Pharmacognosie</li>
@@ -129,12 +153,12 @@ justify-content: center;">
   </div>
 </div>
 
-<div class="card text-white bg-success mb-3" style="max-width: 20rem; margin: 0.5rem;font-color: black;">
+<div id="Bio" class="card text-white bg-success mb-3" style="max-width: 20rem; margin: 0.5rem;">
   <div class="card-header">Biologie</div>
   <div class="card-body">
     <center><img src="./CSP_Assets/Biocell_Logo.png" alt="" style="width:50% ;"></center>
     <p class="card-text">
-      <ul>
+      <ul style="list-style: none; ">
         <li>Biologie Cellulaire</li>
         <li>Biochimie</li>
         <li>Génétique</li>
@@ -148,12 +172,12 @@ justify-content: center;">
   </div>
 </div>
 
-<div class="card text-white bg-success mb-3" style="max-width: 20rem; margin: 0.5rem;font-color: black;">
+<div id="Microbio" class="card text-white bg-success mb-3" style="max-width: 20rem; margin: 0.5rem;">
   <div class="card-header">microBiologie</div>
   <div class="card-body">
     <center><img src="./CSP_Assets/Microbio_Logo.png" alt="" style="width:50% ;"></center>
     <p class="card-text">
-      <ul>
+      <ul style="list-style: none; ">
         <li>Bacterio.</li>
         <li>Myco.</li>
         <li>Parasito.</li>
@@ -168,12 +192,12 @@ justify-content: center;">
   </div>
 </div>
 
-<div class="card text-white bg-dark mb-3" style="max-width: 20rem; margin: 0.5rem;font-color: black;">
+<div id="Gale" class="card text-white bg-dark mb-3" style="max-width: 20rem; margin: 0.5rem;">
   <div class="card-header">Galénique</div>
   <div class="card-body">
     <center><img src="./CSP_Assets/Galénique_Logo.png" alt="" style="width:50% ;"></center>
     <p class="card-text">
-      <ul>
+      <ul style="list-style: none; ">
         <li>Galénique</li>
         <li>BPP</li>
         <li>Contrôles</li>
@@ -190,12 +214,12 @@ justify-content: center;">
 </div>
 
 
-<div class="card text-white bg-primary mb-3" style="max-width: 20rem; margin: 0.5rem;font-color: black;">
+<div id="IR" class="card text-white bg-primary mb-3" style="max-width: 20rem; margin: 0.5rem;">
   <div class="card-header">I&R</div>
   <div class="card-body">
     <center><img src="./CSP_Assets/Indus_Logo.png" alt="" style="width:50% ;"></center>
     <p class="card-text">
-      <ul>
+      <ul style="list-style: none; ">
         <li>Industrie Pharma</li>
         <li>Réglementaire</li>
         <li>R&D</li>
@@ -209,13 +233,13 @@ justify-content: center;">
   </div>
 </div>
 
-<div class="card text-white bg-danger mb-3" style="max-width: 20rem; margin: 0.5rem;font-color: black;">
+<div id="SPV" class="card text-white bg-primary mb-3" style="max-width: 20rem; margin: 0.5rem;">
   <div class="card-header">Santé Pu. et Vigilance</div>
   <div class="card-body">
-    <center><img src="./CSP_Assets/SantePu_Logo.png" alt="" style="width:50% ;"></center>
+    <center><img src="./CSP_Assets/SantePu_Logo.png" alt="" style="width:60% ;"></center>
     <p class="card-text">
-      <ul>
-        <li>S.Publique</li>
+      <ul style="list-style: none; ">
+        <li>Santé Publique</li>
         <li>Vigilance</li>
       </ul>
     </p>
@@ -226,12 +250,31 @@ justify-content: center;">
   </div>
 </div>
 
-<div class="card text-light bg-secondary mb-3" style="max-width: 20rem; margin: 0.5rem;border-width: 2px; border-color: black;">
+<div id="EM" class="card text-black bg-slight mb-3" style="max-width: 20rem; margin: 0.5rem;border-width: 2px; border-color: black;">
+  <div class="card-header">Examens Médicaux</div>
+  <div class="card-body">
+    <center><img src="./CSP_Assets/MedExam_Logo.png" alt="" style="width:50% ;"></center>
+    <p class="card-text">
+      <ul style="list-style: none; ">
+        <li>Biologie</li>
+        <li>Clinique</li>
+        <li>Imagerie</li>
+        <li>X - scopie</li>
+      </ul>
+    </p>
+    <center>
+    <a href=""><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="dark">En savoir plus</button>
+    </a>
+  </center>
+  </div>
+</div>
+
+<div id="EdC" class="card text-black bg-slight mb-3" style="max-width: 20rem; margin: 0.5rem;border-width: 2px; border-color: black;">
   <div class="card-header">Etudes de Cas</div>
   <div class="card-body">
     <center><img src="./CSP_Assets/Annales_Logo.png" alt="" style="width:50% ;"></center>
     <p class="card-text">
-      <ul>
+      <ul style="list-style: none; ">
         <li>Annales Corrigées</li>
         <li>Cas Cliniques</li>
         <li>Littérature</li>
@@ -239,7 +282,7 @@ justify-content: center;">
       </ul>
     </p>
     <center>
-    <a href=""><button type="button" class="btn btn-outline-light btn-rounded" data-mdb-ripple-color="dark">En savoir plus</button>
+    <a href=""><button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="dark">En savoir plus</button>
     </a>
   </center>
   </div>
